@@ -1,7 +1,8 @@
 {
   "headers":{
     "/*":{
-      "X-Author": "ta1jin"
+      "X-Author": "ta1jin",
+      "Access-Control-Allow-Origin": "*"
     }
    }
 
