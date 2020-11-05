@@ -1,9 +1,14 @@
 {
-  "headers":{
-    "/*":{
-      "X-Author": "ta1jin",
+   "routes": {
+    "/login/*": "index.html",
+     "/sample/*": "index2.html"
+  },
+  "headers": {
+    "/login/*": {
+      "Content-Type": "text/plain; charset=UTF-8",
       "Access-Control-Allow-Origin": "*"
-    }
-   }
-
+    },
+    "/sample/*": {
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Access-Control-Allow-Origin": "*"
 }
