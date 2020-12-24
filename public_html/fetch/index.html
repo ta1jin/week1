@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title></title>
+</head>
+<body>
+    <input id="inp">
+    <button id="bt" onclick=btClick()></button>
+    <script>
+        async function btClick(){
+            let url = document.getElementById('inp').value;
+            let text = await fetch(url).then((response) => response.text());
+            document.getElementById('inp').value = text;
+        }
+    </script>
+</body>
+</html>
