@@ -1,7 +1,24 @@
 {
-	"headers": {
-		"/**": {
-		"Access-Control-Allow-Origin": "*"
-		}
-	}
+  "routes": {
+    "/login/*": "index.html",
+     "/sample/*": "index2.html"
+    "/sample/*": "index2.html",
+    "/promise/*": "promise.html",
+    "/fetch/*": "fetch.html"
+  },
+  "headers": {
+    "/login/*": {
+@@ -11,4 +13,13 @@
+    "/sample/*": {
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/promise/*": {
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/fetch/*": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
 }
